@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Portofolio Ikhsan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navbar Start-->
+    <nav class = "navbar" id="Navbar">
+        <a href="#" class="navbar-logo">Ikhsan<span>Ramadhanu</span></a>
+
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contacts</a>
+        </div>
+        <div class="mode">
+            <i class="material-icons" style="font-size: 35px; margin-right: 10px;" onclick="myFunction(this)">light_mode</i>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+    
+    <!-- Hero Section Start-->
+    <div class="hero" id="home">
+        <div id="content">
+            <h6>Hai! Perkenalkan saya</h6>
+            <h2 style="margin-bottom: 10px; color: #51A38A;">Ikhsan Fathirizky Ramadhanu</h2>
+            <h4 style="margin-bottom: 10px;">Front-End Developer & Data Analyst</h4>
+            <p style="margin-bottom: 10px; font-size: 65%; max-width: 500px;">Belum menjadi expert di bidangnya namun selalu tertarik mencoba hal baru dan berusaha menjadi lebih baik!</p>
+            <a class="cta" href="#contact">Hubungi saya</a>
+        </div>
+        <img src="./public/Pict_LP.png" width="394px" height="351px" />
+    </div>
+    <!-- Hero Section End-->
+
+    <!-- About me section start -->
+    <div class="About" id="about">
+        <div class="isi">
+            <img src="./public/aboutme_pic.jpg" style="margin-right: 150px; height: 35rem; width: auto; border-radius: 3rem;" id="foto"/>
+        </div>
+        <div class="text">
+            <h2>About me</h2>
+            <p>Mahasiswa semester 4 di Universitas Pembangunan Nasional Veteran Jakarta Jurusan S1 Sistem Informasi Fakultas Ilmu Komputer
+                dengan ketertarikan pada <i>Front-End Web Development</i> dan <i>Data Analysis</i>. Selalu tertarik dengan hal baru 
+                khususnya di bidang teknologi digital dan science.
+            </p>
+            <div class="ket">
+                <div style="width: 50%;">
+                    <h3>Skills</h3>
+                    <div style="margin-top: 1rem; width: 70%;">
+                        <img src="./public/htmlcssjs.png" alt="" style="height: 2.1rem; width: auto;">
+                        <img src="./public/react.png" alt="" style="height: 2.1rem; width: auto;">
+                        <img src="./public/tailwind.png" alt="" style="height: 2.1rem; width: auto;">
+                        <img src="./public/python.png" alt="" style="height: 2.1rem; width: auto;">
+                        <img src="./public/mysql.png" alt="" style="height: 2.1rem; width: auto;">
+                    </div>
+                    
+                </div>
+                <div style="width: 50%;">
+                    <h3 style="margin-left: 0.5rem;">Hobbies</h3>
+                    <div style="margin-top: 0.4rem; display: flex;">
+                        <p style="font-size: 2rem; width: auto;">🍿</p>
+                        <p style="font-size: 2rem; width: auto;">🎧</p>
+                        <p style="font-size: 2rem; width: auto;">📚</p>
+                        <p style="font-size: 2rem; width: auto;">💻</p>
+                    </div>
+                </div>
+            </div>
+            <h3>"Focus on things that still in your control and don't mind the rest"</h3>
+        </div>
+    </div>
+    <!-- About me section end -->
+
+    <!-- Projects section start -->
+    <div class="Project" id="project">
+        <h2 style="color: #51A38A; font-size: 40px;">My projects</h2>
+        <div class="container">
+            <div class="card">
+                <a href="https://social-link-ikhsan.vercel.app/" target="_blank">
+                    <img src="./public/socialprofile.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Link Profile</h5>
+                        <p class="card-text">Kumpulan tautan untuk menghubungkan orang-orang ke berbagai profil sosial media saya.</p>
+                        <div>
+                            <a href="https://github.com/IkhsanRamadhanu" class="fa-brands fa-github" target="_blank"></a>
+                            <a class="material-icons" href="https://social-link-ikhsan.vercel.app/" target="_blank">language</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://docs.google.com/presentation/d/1tzTeU9CBhORSuQ97RmNzAE9GLAx_pOQoAmuvjGlJLps/edit?usp=drive_link" target="_blank">
+                    <img src="./public/pitchdeck.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Analisis Penjualan Superstore</h5>
+                        <p class="card-text">Exploratory Data Analysis terkait data penjualan Superstore serta pemberian rekomendasi berdasarkan insight yang didapat.</p>
+                        <div>
+                            <a class="material-icons" href="https://docs.google.com/presentation/d/1tzTeU9CBhORSuQ97RmNzAE9GLAx_pOQoAmuvjGlJLps/edit?usp=drive_link" target="_blank">language</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Projects section end -->
+
+    <!--  Contact section start -->
+    <div class="Contact" id="contact">
+        <div class="kontener">
+            <h2>Contact me</h2>
+            <div class="kontak">
+                <a class="email" href="mailto:ikhsan.ramadhanu@gmail.com" target="_blank">
+                    <i class="material-icons" style="font-size: 35px; margin-right: 10px;">mail</i>
+                    <p>ikhsan.ramadhanu@gmail.com</p>
+                </a>
+                <a class="whatsapp" href="https://wa.me/6287877668735" target="_blank">
+                    <i class="material-icons" style="font-size: 35px; margin-right: 10px;">chat</i>
+                    <p>+62 878-7766-8735 (WhatsApp)</p>
+                </a>
+            </div>
+            
+            <div class="sosmed">
+                <a href="https://instagram.com/ikhsanfathirizkyr?igshid=MzMyNGUyNmU2YQ==" class="fa-brands fa-instagram" target="_blank" style="margin-left: 0px ;"></a>
+                <a href="https://github.com/IkhsanRamadhanu" class="fa-brands fa-github" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/ikhsan-ramadhanu-6369202a9/" class="fa-brands fa-linkedin" target="_blank"></a>
+            </div>
+            
+            <p class="copyright">© 2023 Ikhsan Fathirizky Ramadhanu.</p>
+        </div>
+    </div>
+    <!-- Contact section end -->
+    <script src="Script.js"></script>
+
+</body>
+</html>

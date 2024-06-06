@@ -1,0 +1,297 @@
+*{
+    overflow-x: hidden;
+}
+
+:root{
+    --primary: #51a38a;
+    --bg: #f5f5dc;
+    --bgdark: #262d35;
+    --text: #222222;
+    --textdark: #EBEBEB;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #FFFFFF;
+    max-width: 1920px
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    background-color: var(--bg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary)
+}
+
+.navbar .navbar-nav{
+    margin-left: 250px;
+    color: var(--text);
+}
+
+.mode a{
+    color: var(--text);
+}
+
+.mode i{
+    color: var(--text);
+    cursor: pointer;
+}
+
+.navbar .navbar-nav a {
+    color: var(--text);
+    font-weight: 600;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 2rem;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.hero {
+    min-height: 810px;
+    min-width: 1440px;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    font-size: 1.7rem;
+    justify-content: space-around;
+}
+
+#content{
+    padding: 1rem 1rem;
+}
+
+.hero h2{
+    font-size: 40px;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #51A38A; 
+    text-decoration: none;
+    padding: 1rem 2rem; 
+    border-radius: 2rem; 
+    font-weight: 600; 
+    font-size: 1rem;  
+    margin-top: 1rem;
+    color: var(--textdark);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta:active{
+    transform: scale(0.95);
+}
+
+
+.About{
+    background-color: var(--primary);
+    display: flex;
+    height: 710px;
+    min-width: 1440px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--textdark);
+    padding: 0rem 10rem;
+}
+
+.text h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #f5f5dc
+}
+
+.text p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.text{
+    max-width: 650px;
+    font-size: 1.5rem;
+}
+
+.text h3{
+    font-size: 1.5rem;
+    color: #f5f5dc
+}
+
+.ket{
+    margin-bottom: 60px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.Project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+    padding-top: 70px;
+    height: 710px;
+    min-width: 1440px;
+    color: var(--text);
+    font-size: 20px;
+}
+
+.container{
+    margin-top: 80px;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.card {
+    width: 18rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:active{
+    transform: scale(0.95);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body a{
+    color: var(--text);
+    font-size: 25px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Contact{
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    height: 360px;
+    min-width: 1440px;
+    color: var(--textdark);
+    font-size: 30px;
+    padding: 40px;
+}
+
+.kontener h2{
+    margin-bottom: 30px;
+}
+
+.kontener p{
+    font-size: 20px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textdark);
+}
+
+.whatsapp{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textdark);
+}
+
+.kontak{
+    margin-bottom: 20px;
+}
+
+.sosmed a{
+    font-size: 35px;
+    display: inline-block;
+    margin: 5px;
+    color: var(--textdark);
+}
+
+.sosmed{
+    margin-bottom: 30px;
+}
+
+.kontener h2{
+    color: #f5f5dc;
+}
+
+.kontener .copyright{
+    color: #f5f5dc;
+    font-size: 15px;
+}
