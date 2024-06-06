@@ -104,7 +104,7 @@ body {
     align-items: center;
     color: var(--text);
     font-size: 1.7rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #content{
